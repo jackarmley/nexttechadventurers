@@ -1,0 +1,12 @@
+{
+  "name": "codefirstgirls",
+  "version": "0.0.0",
+  "description": "Code First Girls project",
+  "devDependencies": {
+    "fuse": "^0.4.0",
+    "gulp": "^3.9.1",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-connect": "^5.0.0",
+    "gulp-fuse": "0.0.1"
+  }
+}
