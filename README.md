@@ -44,6 +44,7 @@ http://localhost:2017
  - css/styles.css // Compiled css. DON'T EDIT THIS!
  - images/ // Add images for the project here
  - js/app.js // Put Javascript for the project here
+ - icons/ // A set of automatically generated Google Material Design icons 
 - src/
  - css/ // Put css for the project here
  - html/ // Put html for the project here
