@@ -7,6 +7,8 @@
     "gulp": "^3.9.1",
     "gulp-concat-css": "^2.3.0",
     "gulp-connect": "^5.0.0",
-    "gulp-fuse": "0.0.1"
+    "gulp-fuse": "0.0.1",
+    "gulp-material-icons": "^1.0.4",
+    "gulp-svg-sprites": "^4.1.1"
   }
 }

@@ -5,9 +5,14 @@ const gulp = require('gulp'),
       fuse = require('fuse'),
       concatCss = require('gulp-concat-css'),
       connect = require('gulp-connect'),
+      icons = require("gulp-material-icons"),
+      sprites = require("gulp-svg-sprites"),
+      tasks   = require("./icons.json"),
       paths = {
           'html': './src/html/',
-          'css': './src/css/'
+          'css': './src/css/',
+          'images': './static/images/',
+          'icons': './static/icons'
       };
 
 // Task: Combine html
@@ -42,10 +47,18 @@ gulp.task('connect', function() {
   });
 });
 
+// Task: make icons
+// This makes an icon set for us to use
+gulp.task("icons", function() {
+    return icons({tasks: tasks})
+        .pipe(sprites())
+        .pipe(gulp.dest(paths.icons));
+});
+
 // Task: watch
 // This automatically runs the css and html tasks whenever a file is saved
 gulp.task('watch', function () {
-  gulp.watch(['./src/html/**/*', './src/css/**/*'], ['html','css']);
+  gulp.watch(['./src/html/**/*', './src/css/**/*'], ['html','icons','css']);
 });
 
 // Task: default

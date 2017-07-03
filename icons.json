@@ -1,0 +1,26 @@
+[
+  {
+    "sizes": [24, 48],
+    "ids": ["black"],
+    "fills": ["#000000"],
+    "icons": [
+      "maps/flight",
+      "maps/directions_bus",
+      "maps/directions_ferry",
+      "maps/directions_car",
+      "maps/directions_train",
+      "maps/directions_walk",
+      "maps/directions_bike",
+      "maps/hotel",
+      "maps/local_cafe",
+      "maps/local_parking",
+      "maps/map",
+      "maps/navigation",
+      "navigation/close",
+      "navigation/menu",
+      "content/add",
+      "content/remove",
+      "social/person"
+    ]
+  }
+]
