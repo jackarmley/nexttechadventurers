@@ -1,34 +1,90 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Code First Girls</title>
-<link rel="stylesheet" href="./static/css/styles.css" />
-
-  </head>
-  <body>
-    <header>
+    <header class="site-header">
+  <h1 class="site-title">My dream destination: France</h1>
+  <button type="button" name="button" class="site-menu-trigger">Menu</button>
+  <nav class="site-menu">
+    <ul>
+      <li><a href="#section-wishlist">Wishlist</a></li>
+      <li><a href="#section-gallery">Gallery</a></li>
+      <li><a href="#section-location">Location</a></li>
+      <li><a href="#section-about">About</a></li>
+    </ul>
+  </nav>
 </header>
 
     <section class="section" id="section-intro">
+  <h1 class="section-heading">Why France?</h1>
+  <img src="https://www.raileurope.com/cms-images/61/854/france-rail-overview-1.jpg" alt="Intro" />
+  <p>Nestled in Northern Europe, France is the cultural and culinary capital of Europe</p>
 </section>
 
-    <section>
+    <section class="section" id="section-wishlist">
+  <h2 class="section-heading">My wishlist</h2>
+  <form action="#" class="wishlist">
+    <ol>
+      <li>
+        <label for="item-1">
+          <input type="checkbox" name="wishlist" id="item-1" value="" />
+          <span>Eat garlic</span>
+        </label>
+      </li>
+      <li>
+        <label for="item-2">
+          <input type="checkbox" name="wishlist" id="item-2" value="" />
+          <span>Climb a mountain</span>
+        </label>
+      </li>
+      <li>
+        <label for="item-3">
+          <input type="checkbox" name="wishlist" id="item-3" value="" />
+          <span>Go to Paris</span>
+        </label>
+      </li>
+    </ol>
+  </form>
 </section>
 
-    <section>
+    <section class="section" id="section-gallery">
+  <h2 class="section-heading">Gallery</h2>
+  <div class="gallery">
+    <figure>
+      <img src="./static/images/sample-square-1.png" alt="Sample image" />
+      <figcaption>Caption</figcaption>
+    </figure>
+    <figure>
+      <img src="./static/images/sample-square-2.jpg" alt="Sample image" />
+      <figcaption>Caption</figcaption>
+    </figure>
+    <figure>
+      <img src="./static/images/sample-square-1.png" alt="Sample image" />
+      <figcaption>Caption</figcaption>
+    </figure>
+    <figure>
+      <img src="./static/images/sample-square-2.jpg" alt="Sample image" />
+      <figcaption>Caption</figcaption>
+    </figure>
+    <figure>
+      <img src="./static/images/sample-square-1.png" alt="Sample image" />
+      <figcaption>Caption</figcaption>
+    </figure>
+    <figure>
+      <img src="./static/images/sample-square-2.jpg" alt="Sample image" />
+      <figcaption>Caption</figcaption>
+    </figure>
+  </div>
 </section>
 
-    <section>
+    <section class="section" id="section-location">
+  <h2 class="section-heading">Location</h2>
+  <p>Jump on a ferry or a plane, it is very close!</p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5662098.579588757!2d-2.4356452432240596!3d46.13687372798662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54a02933785731%3A0x6bfd3f96c747d9f7!2sFrance!5e0!3m2!1sen!2suk!4v1498816869454" width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
+  </iframe>
 </section>
 
-    <section>
+    <section class="section" id="section-about">
+  <h2 class="section-heading">About the project</h2>
+  <p>The team behind the project and how it was made</p>
 </section>
 
-    <footer>
-</footer>
-
-    <script src="./static/js/app.js"></script>
-  </body>
-</html>
+    <footer class="site-footer">
+  <span>&copy; Code First Girls at Expedia, 2017</span>
+>>>>>>> gh-pages
