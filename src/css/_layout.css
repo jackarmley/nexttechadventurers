@@ -1,3 +1,32 @@
 /**
  * Layout styles
  */
+.site-header {
+  background: white;
+  padding: 20px;
+}
+.site-title {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+.site-menu-trigger {
+    font-size: 1em;
+    padding: 10px;
+    border: 2px solid white;
+    background: transparent;
+    border-radius: 5px;
+}
+.site-menu li {
+  display: inline;
+}
+.site-menu a {
+  display: block;
+  padding: 10px 0;
+}
+.site-menu-trigger.is-closed + .site-menu {
+   display: none;
+}
+
+.site-footer {
+  padding: 20px;
+}

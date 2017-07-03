@@ -1,0 +1,21 @@
+/**
+ * Typography
+ */
+
+ @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Pacifico|Varela+Round');
+
+body {
+  font: normal 100%/1.8 'Varela Round', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Pacifico', sans-serif;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+a {
+  color: currentColor;
+}

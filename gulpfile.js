@@ -1,16 +1,29 @@
+// Gulp tasks
+
+// Load dependencies
 const gulp = require('gulp'),
       fuse = require('fuse'),
       concatCss = require('gulp-concat-css'),
-      connect = require('gulp-connect');
+      connect = require('gulp-connect'),
+      paths = {
+          'html': './src/html/',
+          'css': './src/css/'
+      };
 
+// Task: Combine html
+// This combines all html files within the src/html folder together into
+// one index.html file
 gulp.task('html', function() {
-    return fuse.fuseFile('./src/html/index.html', './index.html', function (err, results) {
+    return fuse.fuseFile(paths.html + 'index.html', './index.html', function (err, results) {
     	console.log(results);
     });
 });
 
+// Task: Combine css
+// This combines all css files that are called via @import statements in the
+// src/css/_styles.css file
 gulp.task('css', function () {
-  return gulp.src('./src/css/_styles.css')
+  return gulp.src(paths.css + '_styles.css')
     .pipe(concatCss("styles.css"), {
         'inlineImports': true
     })
@@ -18,6 +31,9 @@ gulp.task('css', function () {
     .pipe(connect.reload());
 });
 
+// Task: connect
+// This runs a local server so the site can be tested
+// on mobiles, tablets etc...
 gulp.task('connect', function() {
   connect.server({
     root: './',
@@ -26,8 +42,12 @@ gulp.task('connect', function() {
   });
 });
 
+// Task: watch
+// This automatically runs the css and html tasks whenever a file is saved
 gulp.task('watch', function () {
   gulp.watch(['./src/html/**/*', './src/css/**/*'], ['html','css']);
 });
 
+// Task: default
+// This runs when you type "gulp" into the terminal
 gulp.task('default', ['connect', 'watch']);

@@ -3,5 +3,6 @@
  */
 
 @import '_reset.css';
+@import '_typography.css';
 @import '_components.css';
 @import '_layout.css';
