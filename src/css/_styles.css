@@ -5,4 +5,10 @@
 @import '_reset.css';
 @import '_typography.css';
 @import '_components.css';
-@import '_layout.css';
+@import '_site-header.css';
+@import '_site-footer.css';
+@import '_section-intro.css';
+@import '_section-wishlist.css';
+@import '_section-gallery.css';
+@import '_section-location.css';
+@import '_section-about.css';
