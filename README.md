@@ -50,6 +50,10 @@ http://localhost:2017
  - html/ // Put html for the project here
 ```
 
+## URLS
+- Access the site [localhost:2017](http://localhost:2017)
+- Preview icons [localhost:2017/static/icons/sprite.html](http://localhost:2017/static/icons/sprite.html)
+
 ## Resources
 
 - Easily get color themes using [color.adobe.com](https://color.adobe.com/Tropical-Vacation-2013-color-theme-2218684/?showPublished=true)
