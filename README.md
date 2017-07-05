@@ -24,7 +24,7 @@ cd [wherever you put it]/codefirstgirls
 npm install
 ```
 
-4. Start the server
+4. Compile all the css, js, html and icons; Start the server; Watch for changes to css, js and html
 
 ```
 gulp
