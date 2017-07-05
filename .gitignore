@@ -3,4 +3,4 @@ static/css/styles.css
 static/js/app.js
 .DS_Store
 node_modules
-./static/icons/sprite.html
+static/icons/sprite.html
