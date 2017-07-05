@@ -1,4 +1,4 @@
-./index.html
+index.html
 dist/
 .DS_Store
 node_modules

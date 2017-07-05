@@ -46,7 +46,7 @@ const gulp = require('gulp'),
 // This combines all html files within the src/html folder together into
 // one index.html file
 gulp.task('html', function() {
-    return fuse.fuseFile(paths.html.src + 'index.html', paths.html.dest + 'index.html', function (err, results) {
+    return fuse.fuseFile(paths.html.src + '_index.html', paths.html.dest + 'index.html', function (err, results) {
     	console.log('html', results);
     });
 });
