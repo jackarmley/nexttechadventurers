@@ -101,7 +101,17 @@ gulp.task('connect', function() {
 // Task: watch
 // This automatically runs the css and html tasks whenever a file is saved
 gulp.task('watch', function () {
-  gulp.watch([paths.html.src + '**/*', paths.css.src + '**/*', paths.js.src + '**/*', paths.images.src + '**/*'], ['html','css', 'js', 'images']);
+    gulp.watch([
+        paths.html.src + '**/*',
+        paths.css.src + '**/*',
+        paths.js.src + '**/*',
+        paths.images.src + '**/*'
+    ], [
+        'html',
+        'css',
+        'js',
+        'images'
+    ]);
 });
 
 // Task: package
