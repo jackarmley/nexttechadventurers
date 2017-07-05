@@ -9,7 +9,7 @@ All these steps happen in terminal
 1. Clone the repo
 
 ```
-git clone codefirstgirls.git
+git clone git@github.com:jackarmley/codefirstgirls.git
 ```
 
 2. Go into the repo folder
