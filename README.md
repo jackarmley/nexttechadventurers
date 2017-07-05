@@ -40,19 +40,19 @@ http://localhost:2017
 ```
 - gulpfile.js // Small JS file that runs tasks we need for the project eg: combining css
 - package.json // A list of all the packages we need to run tasks via gulpfile.js
-- static/
- - css/styles.css // Compiled css. DON'T EDIT THIS!
- - images/ // Add images for the project here
- - js/app.js // Put Javascript for the project here
- - icons/ // A set of automatically generated Google Material Design icons 
+- dist/ // Where all the src files are combined to. DON'T EDIT THIS!
 - src/
  - css/ // Put css for the project here
  - html/ // Put html for the project here
+ - images // Put images for the project here
+ - js // Put js for the project here
+- index.html // The index page you see when you visit localhost.2017. DON'T EDIT THIS! It is compiled from src/html/
+- icons.json // List of the icons available for the project that is compiled to dist/icons
 ```
 
 ## URLS
 - Access the site [localhost:2017](http://localhost:2017)
-- Preview icons [localhost:2017/static/icons/sprite.html](http://localhost:2017/static/icons/sprite.html)
+- Preview icons [localhost:2017/dist/icons/sprite.html](http://localhost:2017/static/icons/sprite.html)
 
 ## Resources
 
