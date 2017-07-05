@@ -1,6 +1,4 @@
 ./index.html
-static/css/styles.css
-static/js/app.js
+dist/
 .DS_Store
 node_modules
-static/icons/sprite.html
