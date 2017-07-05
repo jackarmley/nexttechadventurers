@@ -1,0 +1,3 @@
+/**
+ * Gallery section js
+ */

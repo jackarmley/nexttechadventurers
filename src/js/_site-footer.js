@@ -1,0 +1,3 @@
+/**
+ * Site footer js
+ */

@@ -1,4 +1,5 @@
 ./index.html
 static/css/styles.css
+static/js/app.js
 .DS_Store
 node_modules

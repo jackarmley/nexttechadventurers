@@ -1,0 +1,3 @@
+/**
+ * Wishlist section js
+ */

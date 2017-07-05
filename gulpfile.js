@@ -11,6 +11,7 @@ const gulp = require('gulp'),
       paths = {
           'html': './src/html/',
           'css': './src/css/',
+          'js': './src/js/',
           'images': './static/images/',
           'icons': './static/icons'
       };
@@ -20,7 +21,16 @@ const gulp = require('gulp'),
 // one index.html file
 gulp.task('html', function() {
     return fuse.fuseFile(paths.html + 'index.html', './index.html', function (err, results) {
-    	console.log(results);
+    	console.log('html', results);
+    });
+});
+
+// Task: Combine js
+// This combines all js files within the src/js folder together into
+// one app.js file
+gulp.task('js', function() {
+    return fuse.fuseFile(paths.js + 'app.js', './static/js/app.js', function (err, results) {
+    	console.log('js', results);
     });
 });
 
@@ -58,8 +68,12 @@ gulp.task("icons", function() {
 // Task: watch
 // This automatically runs the css and html tasks whenever a file is saved
 gulp.task('watch', function () {
-  gulp.watch(['./src/html/**/*', './src/css/**/*'], ['html','icons','css']);
+  gulp.watch(['./src/html/**/*', './src/css/**/*', './src/js/**/*'], ['html','icons','css', 'js']);
 });
+
+// Task: package
+// Package everything up without having to run watch
+gulp.task('package', ['html', 'icons', 'css', 'js']);
 
 // Task: default
 // This runs when you type "gulp" into the terminal
