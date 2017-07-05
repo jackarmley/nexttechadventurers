@@ -110,4 +110,4 @@ gulp.task('package', ['html', 'icons', 'css', 'js', 'images']);
 
 // Task: default
 // This runs when you type "gulp" into the terminal
-gulp.task('default', ['connect', 'watch']);
+gulp.task('default', ['connect', 'icons', 'watch']);
