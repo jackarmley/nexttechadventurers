@@ -56,6 +56,7 @@ http://localhost:2017
 
 ## Resources
 
+- [Read the brief](https://github.com/jackarmley/nexttechadventurers/wiki/Next-Tech-Adventurers-brief)
 - Easily get color themes using [color.adobe.com](https://color.adobe.com/Tropical-Vacation-2013-color-theme-2218684/?showPublished=true)
 - Pick a font with [Google fonts](https://fonts.google.com)
 - Look up CSS, Javascript and HTML with [MDN](https://developer.mozilla.org/en-US/)
