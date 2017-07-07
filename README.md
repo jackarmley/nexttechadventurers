@@ -1,4 +1,4 @@
-# Code First Girls project
+# Next Tech Adventurers project
 
 A basic folder structure and set of starter files for the Code First Girls project
 
