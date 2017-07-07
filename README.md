@@ -9,7 +9,7 @@ All these steps happen in terminal
 1. Clone the repo
 
 ```
-git clone codefirstgirls.git
+git clone git@github.com:jackarmley/codefirstgirls.git
 ```
 
 2. Go into the repo folder
@@ -24,7 +24,7 @@ cd [wherever you put it]/codefirstgirls
 npm install
 ```
 
-4. Start the server
+4. Compile all the css, js, html and icons; Start the server; Watch for changes to css, js and html
 
 ```
 gulp
